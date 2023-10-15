@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olhar bamboo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>OLHAR BAMBOO</h1>
+        <img src="./img/Imagem do WhatsApp de 2023-10-11 à(s) 12.58.54_1e153c52.jpg" alt="">
+        <nav>
+            <ul>
+                <li><a href="https://wa.me/5592982229102">Contato</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h2>Produtos</h2>
+    <div class="image-container">
+        <div class="image-item">
+          <img src="img/esponja.jpg" alt="Imagem 1">
+          <p>Esponja</p>
+          <p>Preço: R$ 6,00</p>
+          <button data-nome="Esponja" data-preco="6.00" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="image-item">
+          <img src="img/base mate.jpg" alt="Imagem 2">
+          <p>Base Matte</p>
+          <p>Preço: R$ 40,00</p>
+          <button data-nome="Base Matte" data-preco="40.00" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="image-item">
+            <img src="img/corretivo.jpg" alt="Imagem 2">
+            <p>Corretivo</p>
+            <p>Preço: R$ 10,00</p>
+            <button data-nome="Corretivo" data-preco="10.00" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+          </div>
+          <div class="image-item">
+            <img src="img/delineador.jpg" alt="Imagem 2">
+            <p>Delineador</p>
+            <p>Preço: R$ 10,00</p>
+            <button data-nome="Delineador" data-preco="10.00" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+          </div>
+          <div class="image-item">
+            <img src="img/iluminador.jpg" alt="Imagem 2">
+            <p>Iluminador</p>
+            <p>Preço: R$ 15,00</p>
+            <button data-nome="Iluminador" data-preco="15.00" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+          </div>
+        <div class="image-item">
+          <img src="img/blush.jpg" alt="Imagem 3">
+          <p>Blush</p>
+          <p>Preço: R$ 20,00</p>
+          <button data-nome="Blush" data-preco="20.00" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <div class="cart">
+        <h1>Carrinho de Compras</h1>
+        <ul id="cart-items">
+            <!-- Itens do carrinho serão exibidos aqui -->
+        </ul>
+        <p>Total: R$<span id="cart-total">0.00</span></p>
+        <button id="enviar-pedido">Enviar Pedido para o WhatsApp</button>
+    </div>
+    <footer>
+        
+        <div class="footer-item">
+            <a href="https://www.instagram.com/olharbamboo/"><img src="./img/instagran.sgv.jpg" alt=""></a>
+            
+            <a href="https://www.instagram.com/olharbamboo/"><p>instagran</p></a>
+        </div>
+    </footer>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
