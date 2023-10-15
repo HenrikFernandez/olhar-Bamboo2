@@ -161,17 +161,18 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Estilos para telas menores, como celulares */
 @media screen and (max-width: 768px) {
     .top-bar {
-        padding: 20px;
-        height: auto;
-        text-align: center;
+        padding: 10px; /* Reduza o padding para economizar espaço */
+        height: auto; /* A altura se ajustará automaticamente ao conteúdo */
+        text-align: center; /* Centralize o conteúdo */
     }
 
     .top-bar img {
-        width: 100%; /* A imagem ocupa a largura total */
-        height: auto;
-        margin-left: 0;
+        width: 50%; /* A imagem ocupará a largura total da tela */
+        height: auto; /* A altura se ajustará automaticamente */
+        margin-left: 0; /* Reduza a margem esquerda para centralizar a imagem */
     }
 
     nav ul {
@@ -183,20 +184,9 @@ footer a:hover {
         margin: 10px 0;
     }
 
-    h2 {
-        text-align: center;
-    }
-
-    .image-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
     .image-item {
         margin: 10px;
         text-align: center;
-        flex: 0 0 calc(50% - 20px); /* Dois produtos por linha */
+        flex: 0 0 calc(100% - 20px); /* Um produto por linha */
     }
 }
