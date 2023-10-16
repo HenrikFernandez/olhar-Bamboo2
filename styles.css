@@ -33,7 +33,10 @@ body {
    
 }
 
-
+.image img {
+    width: 30px;
+    height: 30px;
+}
 nav ul {
     list-style: none;
 }
@@ -93,10 +96,10 @@ h2 {
 }
 
 .footer-item img {
-    width: 75px;
-    height: 75px;
-    border-radius: 20px;
-    border: 5px solid black;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid black;
     display: block;
     margin: 0 auto;
 }
@@ -116,7 +119,7 @@ footer a:hover {
 
 .cart {
     text-align: left;
-    background-color: black;
+    background-color: rgb(237, 75, 75);
     padding: 20px;
 }
 
@@ -165,24 +168,19 @@ footer a:hover {
 /* Estilos para telas menores, como celulares */
 @media screen and (max-width: 768px) {
     .top-bar {
-        padding: 10px;
-        height: auto;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 10px; /* Reduza o padding para economizar espaço */
+        height: auto; /* A altura se ajustará automaticamente ao conteúdo */
+        text-align: center; /* Centralize o conteúdo */
     }
 
     .top-bar img {
-        width: 100%;
-        height: auto;
-        border-radius: 0; /* Remova a borda arredondada, se desejado */
-        border: none; /* Remova a borda branca, se desejado */
-        margin-left: 0;
+        width: 50%; /* A imagem ocupará a largura total da tela */
+        height: auto; /* A altura se ajustará automaticamente */
+        margin-left: 0; /* Reduza a margem esquerda para centralizar a imagem */
     }
 
     nav ul {
-        margin: 20px 0; /* Espaço entre os itens do menu */
+        margin-top: 20px;
     }
 
     nav li {
@@ -190,16 +188,9 @@ footer a:hover {
         margin: 10px 0;
     }
 
-    .image-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
     .image-item {
         margin: 10px;
         text-align: center;
-        flex: 0 0 calc(50% - 20px);
+        flex: 0 0 calc(100% - 20px); /* Um produto por linha */
     }
 }
