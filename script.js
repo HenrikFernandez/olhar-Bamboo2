@@ -53,6 +53,8 @@ function atualizarCarrinho() {
     totalCarrinho.textContent = `R$ ${calcularTotalCarrinho().toFixed(2)}`;
 }
 
+
+
 // Função para criar a mensagem do pedido
 function criarMensagemPedido() {
     let mensagem = 'Olá, gostaria de fazer um pedido com os seguintes itens:\n';
