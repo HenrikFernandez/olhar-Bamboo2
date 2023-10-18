@@ -13,6 +13,32 @@ body {
     font-family: cursive    ;
 }
 
+.top-bar1 {
+    background-color: red;
+    color: white;
+    display: flex;
+    
+}
+.top-bar1 h2 {
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+}
+li {
+    list-style: none;
+    
+}
+
+a {
+    margin-left:20px ;
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: brown;
+}
+
 .video {
     display: flex;
     justify-content: center;
@@ -51,26 +77,8 @@ body {
     width: 30px;
     height: 30px;
 }
-li {
-    list-style: none;
-    
-}
 
-a {
-    margin-left:20px ;
-    text-decoration: none;
-    color: green;
-}
 
-li a:hover {
-    color: brown;
-}
-
-h2 {
-    font-family: cursive;
-    display: flex;
-    justify-content: center;
-}
 
 .image-container {
     display: flex;
